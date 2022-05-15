@@ -29,20 +29,22 @@
       <form id="controlForm">
         <label for="url">Your website:</label><br />
         <input
+          class="url-input"
           placeholder="http://localhost:3000"
-          style="width: 300px"
           type="text"
           id="url"
           name="url"
         /><br />
-        <label for="width">Width (px):</label><br />
-        <input type="number" id="width" name="width" /><br />
+        <div class="hide-on-mobile">
+          <label for="width">Width (px):</label><br />
+          <input type="number" id="width" name="width" /><br />
 
-        <label for="height">Height (px):</label><br />
-        <input type="number" id="height" name="height" /><br />
+          <label for="height">Height (px):</label><br />
+          <input type="number" id="height" name="height" /><br />
 
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+        </div>
 
         <input class="btn btn-success" type="submit" value="Make Magic" />
         <button id="reset-button" class="btn btn-warning">Reset</button>
