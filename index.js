@@ -37,7 +37,7 @@ const renderScreenSizes = () => {
     const element = `
       <div class='wrap' style='width:${width}px; height:${height}px;'>
       <span class='device-text'>${size.id}: ${size.width} x ${size.height}</span>
-        <iframe crossorigin="anonymous" class='frame' src='${url}' width=${size.width} height=${size.height} />
+        <iframe referrerpolicy="no-referrer" class='frame' src='${url}' width=${size.width} height=${size.height} />
       </div>
     `;
 
