@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <style></style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Buddy</h1>
+    </header>
+    <div>
+      <form id="controlForm">
+        <label for="url">Your website:</label><br />
+        <input
+          placeholder="http://localhost:3000"
+          style="width: 300px"
+          type="text"
+          id="url"
+          name="url"
+        /><br />
+        <label for="width">Width (px):</label><br />
+        <input type="number" id="width" name="width" /><br />
+
+        <label for="height">Height (px):</label><br />
+        <input type="number" id="height" name="height" /><br />
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+
+        <input class="btn btn-success" type="submit" value="Make Magic" />
+        <button id="reset-button" class="btn btn-warning">Reset</button>
+      </form>
+    </div>
+    <div id="iframeContainer"></div>
+  </body>
+</html>
