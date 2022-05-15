@@ -1,3 +1,13 @@
+body {
+  font-family: Helvetica;
+}
+
+h1,
+p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -87,7 +97,7 @@ input {
   }
 
   .disclaimer {
-    background-color: red;
+    background-color: #f6940d;
     display: block;
     position: absolute;
     top: 0;
