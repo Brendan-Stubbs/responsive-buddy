@@ -3,6 +3,10 @@ header {
   justify-content: space-between;
 }
 
+.disclaimer {
+  display: none;
+}
+
 #iframeContainer {
   display: flex;
   align-items: flex-start;
@@ -80,5 +84,17 @@ input {
 
   .url-input {
     width: 200px;
+  }
+
+  .disclaimer {
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    padding-left: 4px;
+    opacity: 0.6;
   }
 }
