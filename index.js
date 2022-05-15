@@ -3,16 +3,6 @@ const localStorageValues = {
   sizes: "sizes",
 };
 
-const testReferrerPolicies = [
-  "no-referrer",
-  "no-referrer-when-downgrade",
-  "origin",
-  "origin-when-cross-origin",
-  "same-origin",
-  "strict-origin-when-cross-origin",
-  "unsafe-url",
-];
-
 const defaultSizes = [
   {
     id: "large",
@@ -40,7 +30,6 @@ const renderScreenSizes = () => {
   }
 
   // DELETE
-  let counter = 0;
 
   iframeContainer.empty();
   for (const size of sizes) {
@@ -49,12 +38,10 @@ const renderScreenSizes = () => {
 
     const element = `
       <div class='wrap' style='width:${width}px; height:${height}px;'>
-      <span class='device-text'>${size.id}: ${size.width} x ${size.height} - ${counter}</span>
-        <iframe referrerpolicy="${testReferrerPolicies[counter]}" class='frame' src='${url}' width=${size.width} height=${size.height} />
+      <span class='device-text'>${size.id}: ${size.width} x ${size.height}</span>
+        <iframe referrerpolicy="unsafe-url" class='frame' src='${url}' width=${size.width} height=${size.height} />
       </div>
     `;
-
-    counter += 1;
 
     iframeContainer.append(element);
   }
