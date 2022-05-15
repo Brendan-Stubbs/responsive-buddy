@@ -35,16 +35,26 @@
           id="url"
           name="url"
         /><br />
-        <div class="hide-on-mobile">
-          <label for="width">Width (px):</label><br />
-          <input type="number" id="width" name="width" /><br />
+        <!-- <div class="hide-on-mobile"> -->
+        <label for="width" class="hide-on-mobile">Width (px):</label><br />
+        <input
+          type="number"
+          class="hide-on-mobile"
+          id="width"
+          name="width"
+        /><br />
 
-          <label for="height">Height (px):</label><br />
-          <input type="number" id="height" name="height" /><br />
+        <label for="height" class="hide-on-mobile">Height (px):</label><br />
+        <input
+          type="number"
+          id="height"
+          class="hide-on-mobile"
+          name="height"
+        /><br />
 
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" /><br />
-        </div>
+        <label class="hide-on-mobile" for="name">Name:</label><br />
+        <input class="hide-on-mobile" type="text" id="name" name="name" /><br />
+        <!-- </div> -->
 
         <input class="btn btn-success" type="submit" value="Make Magic" />
         <button id="reset-button" class="btn btn-warning">Reset</button>
