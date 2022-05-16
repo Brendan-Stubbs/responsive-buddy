@@ -87,6 +87,7 @@ const handleSubmit = () => {
 const reset = () => {
   localStorage.removeItem(localStorageValues.sizes);
   localStorage.removeItem(localStorageValues.url);
+  $("#url").val("");
   location.reload();
 };
 
