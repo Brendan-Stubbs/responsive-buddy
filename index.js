@@ -90,7 +90,10 @@ const reset = () => {
 };
 
 addEventListener("load", () => {
-  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+  if (
+    /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
+    navigator.brave
+  ) {
     alert("For best results use Chrome or Firefox");
   }
 
