@@ -26,7 +26,6 @@ const renderScreenSizes = () => {
   const url = localStorage.getItem(localStorageValues.url);
 
   if (!url) {
-    alert("Please enter a url");
     return;
   }
 
