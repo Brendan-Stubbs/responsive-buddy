@@ -89,14 +89,16 @@ const reset = () => {
   location.reload();
 };
 
-addEventListener("load", () => {
+const showBrowserWarning = () => {
   if (
     /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
     navigator.brave
   ) {
     alert("For best results use Chrome or Firefox");
   }
+};
 
+addEventListener("load", () => {
   $("#reset-button").click(reset);
 
   $("#controlForm").submit((e) => {
@@ -114,4 +116,5 @@ addEventListener("load", () => {
 
   renderScreenSizes();
   $("#url").val(localStorage.getItem(localStorageValues.url));
+  showBrowserWarning();
 });
