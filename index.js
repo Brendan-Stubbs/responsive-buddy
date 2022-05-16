@@ -90,6 +90,10 @@ const reset = () => {
 };
 
 addEventListener("load", () => {
+  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    alert("For best results use Chrome or Firefox");
+  }
+
   $("#reset-button").click(reset);
 
   $("#controlForm").submit((e) => {
