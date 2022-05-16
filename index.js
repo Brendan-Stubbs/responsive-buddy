@@ -78,7 +78,7 @@ const handleSubmit = () => {
     $("#width").val("");
   } else if (width || height || name) {
     alert(
-      "In order to create a new screen size you need to provide all name, width and height"
+      "In order to create a new screen size you need to provide name, width and height"
     );
   }
   renderScreenSizes();
